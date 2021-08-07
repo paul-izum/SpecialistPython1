@@ -5,3 +5,10 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+n = int(input())
+if n%3==0 and n%5==0:
+    print('Foobar')
+elif n%3==0:
+    print('Foo')
+elif n%5==0:
+    print('bar')
