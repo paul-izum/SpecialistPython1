@@ -14,3 +14,15 @@
 #    #
 #    #
 ######
+
+
+side = int(input("Введите длину стороны: "))  
+n = 0
+if 2 <= side <= 30:
+    while n < side:
+        if n == 0 or n == side - 1:
+            print('#'*side)
+            n += 1
+        else:            
+            print('#',' '*(side-4),'#')#функция принт дает + 2 пробела
+            n += 1
