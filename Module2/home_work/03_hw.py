@@ -29,3 +29,13 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+
+
+price = float(input("Введите стоимость: "))  
+n = 0
+if 0 < price <= 105:
+    while n<20:
+        s = price + price * n
+        print(n+1,' ',s ,'Rub.')
+#не знаю как округлить и вывести 2 знака после запятой
+        n += 1
