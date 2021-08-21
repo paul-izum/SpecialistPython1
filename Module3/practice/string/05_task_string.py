@@ -6,3 +6,20 @@
 
 # TODO: your code here
 
+text =  "И темен город. Мороз узором дорог не мети."
+symbols = [",","."," "]
+for i in symbols:
+    text = text.replace(i,"")
+text = text.lower()
+#print(text)
+i = 0
+j = len(text)-1
+palindrome = True
+while i<j:
+    if text[i] != text[j]:
+        palindrome = False
+        print("не является перевертышем")
+    i += 1
+    j -= 1
+if  palindrome == True:
+    print("является перевертышем")
