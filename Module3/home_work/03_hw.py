@@ -2,3 +2,11 @@
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
 # TODO: your code here
+numbers = [-12, -45, -43, 50, -3, -58, -71, 53, 64, 35]
+s = 0
+for number in numbers:
+    if number > 0:
+        s = s +number
+
+print(s)
+
