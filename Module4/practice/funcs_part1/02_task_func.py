@@ -4,7 +4,18 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    number = str(number)
+    i = 0
+    j = len(number) - 1
+    palindrome = True
+    while i < j:
+        if number[i] != number[j]:
+            palindrome = False
+            return "NO"
+        i += 1
+        j -= 1
+    if palindrome == True:
+        return "YES"
 
 
 # Тестируем функцию
