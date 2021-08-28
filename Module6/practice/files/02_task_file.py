@@ -13,3 +13,17 @@
 prices = []
 
 # Подсказка: для преобразования строки в список вспомните про метод строки .split()
+
+
+path = "data/sold.txt"  # вместо dir подставь название папки с файлом.
+# Или удалите dir, если limericks.txt в тойже папке что и текущий файл
+
+# Открываем файл на чтение
+f = open(path, "r", encoding = "utf-8")
+for line in f:
+    for symbol in line.split():
+        prices.append(float(symbol))
+f.close()
+print(sum(prices))
+print(max(prices))
+print(min(prices))
