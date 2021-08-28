@@ -6,8 +6,24 @@
 
 def distance(x1, y1, x2, y2):
     # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
-
+a = [1,2]
+b = [2,8]
+c = [3,7]
 # TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+#print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+#print(min(distance (*a,*b),distance(*a,*c),distance(*b,*c)))
+
+AB = distance(*a,*b)
+BC = distance(*b,*c)
+AC = distance(*a,*c)
+
+# lines = dict ([("name","AB"), ("len",AB)], [("name","BC"),("len", BС)], [("name","AC"),("len", AС)])
+#
+# lines = [("name","AB"), ("len",AB)], [("name","BC"),("len", BС)], [("name","AC"),("len", AС)]
+
+lines = {"AB":AB, "BC":BC, "AC":AC}
+#print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+print("Самый короткий отрезок:",min(lines, key=lines.get))
+
